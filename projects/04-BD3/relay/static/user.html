@@ -1,56 +1,120 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>BD3 user</title>
+    <title>BD3 User</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/bulma/bulma-rtl.min.css">
 </head>
 
 <body>
 
-  <input type="button" value="Connect Metamask" id="connect_metamask_btn" />
-  <span id="ethereum_address"></span>
-  <br/>
-  <br/>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://web3bd.network">
+        <span style="font-size: 24px;">BD3</span>
+      </a>
 
-  <div id="messages"></div>
-  <br/>
-  <br/>
-  <br/>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
 
-  Reply to: <span id="reply_to"></span>
-  <br/>
-  <textarea id="content"></textarea>
-  <br/>
-  <span id="content_event_json"></span>
-  <br/>
-  <input type="button" value="Post" id="content_sig_btn"/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <!-- <a class="navbar-item">
+          Home
+        </a>
 
-  Attest To: <span id="attest_to"></span>
-  <br/>
-  <select id="attest_schemas">
-  </select>
-  <!-- <textarea id="pm"></textarea> -->
-  <br/>
-  <div id='attest_params'>
-  </div>
-  <span id="attest_statement"></span>
-  <br/>
-  <input type="button" value="Attest" id="attest_sig_btn"/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More
+          </a>
 
-  PM To: <span id="pm_to"></span>
-  <br/>
-  <textarea id="pm"></textarea>
-  <br/>
-  <span id="pm_event_hash_id"></span>
-  <br/>
-  <input type="button" value="Send" id="pm_sig_btn"/>
-  <br/>
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              About
+            </a>
+            <a class="navbar-item">
+              Jobs
+            </a>
+            <a class="navbar-item">
+              Contact
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              Report an issue
+            </a>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <!-- <a class="button is-primary">
+              <strong>Sign up</strong>
+            </a>
+            <a class="button is-light">
+              Log in
+            </a> -->
+            <input type="button" value="Connect Metamask" id="connect_metamask_btn" />
+            <span id="ethereum_address"></span>
+        </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title">User</h2>
+
+      <div id="messages"></div>
+      <br/>
+      <br/>
+      <br/>
+
+      Reply to: <span id="reply_to"></span>
+      <br/>
+      <textarea id="content"></textarea>
+      <br/>
+      <span id="content_event_json"></span>
+      <br/>
+      <input type="button" value="Post" id="content_sig_btn"/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+
+      Attest To: <span id="attest_to"></span>
+      <br/>
+      <select id="attest_schemas">
+      </select>
+      <!-- <textarea id="pm"></textarea> -->
+      <br/>
+      <div id='attest_params'>
+      </div>
+      <span id="attest_statement"></span>
+      <br/>
+      <input type="button" value="Attest" id="attest_sig_btn"/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+
+      PM To: <span id="pm_to"></span>
+      <br/>
+      <textarea id="pm"></textarea>
+      <br/>
+      <span id="pm_event_hash_id"></span>
+      <br/>
+      <input type="button" value="Send" id="pm_sig_btn"/>
+      <br/>
+
+    </div>
+  </section>
 
 </body>
 

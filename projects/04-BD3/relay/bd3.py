@@ -142,6 +142,10 @@ class UserHandler(tornado.web.RequestHandler):
 
         self.render('static/user.html')
 
+class NeedHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render('static/need.html')
+
 class UsersHndler(tornado.web.RequestHandler):
     def get(self):
         self.render('static/users.html')

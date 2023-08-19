@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>BD3 Post need</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/static/bulma/bulma-rtl.min.css">
+  <title>BD3 Post need</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/bulma/bulma-rtl.min.css">
 </head>
 
 <body>
@@ -143,13 +143,13 @@ window.onload = async () => {
     }
 
     console.log(ethereum.selectedAddress);
-    ethereum_address.innerText = ethereum.selectedAddress;
+    ethereum_address.innerHTML = `<a href='/profile?addr=${ethereum.selectedAddress}'>${ethereum.selectedAddress}</a>`;
 
     connect_metamask_btn.onclick = async (evt) => {
       const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
       const account = accounts[0];
       console.log(account);
-      ethereum_address.innerText = account;
+      ethereum_address.innerHTML = `<a href='/profile?addr=${account}'>${account}</a>`;
 
       try {
         await ethereum.request({

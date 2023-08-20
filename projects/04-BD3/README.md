@@ -1,4 +1,8 @@
-# BD3项目介绍
+# BD3
+
+![lee17__a_lettermark_of_letter_combination_of_B_D_3_logo_serif_f_4dc5d455-9846-4250-a557-35e638403fc9](https://github.com/kernel1983/DAOInfra-hackerhouse-2023/assets/11926244/d10d8b46-e791-4d38-8d60-e052ecbb145e)
+
+
 
 ## 1. 项目概述
 - **项目名称**
@@ -8,6 +12,8 @@
 ## 2. 技术架构
 - **区块链类型**：公链、联盟链或私链
 - **技术框架**：兼容以太坊地址的Nostr架构
+- **Data Storage**  ElasticSearch
+- **Recommendation Algorithm**  Cosine Similarity Recommendation Algorithm
 - **网络结构**：如 P2P 网络结构
 - **共识机制**：如 PoW、PoS、DPoS 等
 
